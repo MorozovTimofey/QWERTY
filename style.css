@@ -1,0 +1,352 @@
+:root {
+  --font-family: "Manrope", sans-serif;
+  --second-family: "Kumbh Sans", sans-serif;
+  --third-family: "Ruslan Display", sans-serif;
+  --font3: "Roboto Mono", sans-serif;
+
+  --background-back: radial-gradient(
+    127.17% 61.24% at 51.42% 74.95%,
+    rgb(39, 39, 39) 0%,
+    rgb(7, 7, 7) 100%
+  );
+
+  --background-front: linear-gradient(180deg, #fff 0%, #e0e0e0 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: #111;
+  background: var(--background-back);
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.site {
+  background: var(--background-front);
+  width: 56.2vw;
+}
+
+.list_one,
+.list_two,
+.list_three,
+.list_four {
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  padding: 9.1vw 9.7vw 23.4vw 8.7vw;
+  width: 56.2vw;
+  height: 100vh;
+  box-sizing: border-box;
+  gap: 60px;
+}
+
+.attention {
+  position: relative;
+  width: calc(100% + 18.4vw);
+  height: 25vh;
+  left: -8.7vw;
+}
+
+.list_one::after {
+  content: "";
+  position: absolute;
+  width: 45.77vw;
+  height: 70.42vh;
+  top: 10.7vh;
+  left: 46vw;
+  background-image: url("./image/cub.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.list_two::after {
+  content: "";
+  position: absolute;
+  width: 36.9vw;
+  height: 56.82vh;
+  bottom: 0;
+  left: 45vw;
+  background-image: url("./image/image3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.list_two .additional-element {
+  position: absolute;
+  width: 23.61vw;
+  height: 36.35vh;
+  top: 20vh;
+  left: 70.39vw;
+  background-image: url("./image/image4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.list_three::after {
+  content: "";
+  position: absolute;
+  width: 48.41vw;
+  height: 74.54vh;
+  bottom: 0;
+  left: 47.28vw;
+  background-image: url("./image/image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.list_four::after {
+  content: "";
+  position: absolute;
+  width: 48.41vw;
+  height: 74.54vh;
+  bottom: 0;
+  left: 47.28vw;
+  background-image: url("./image/image2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.list_five::after {
+  content: "";
+  position: absolute;
+  width: 41.53vw;
+  height: 63.95vh;
+  top: 23.42vh;
+  left: 47.28vw;
+  background-image: url("./image/smile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.brand {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 32px;
+  letter-spacing: -0.09em;
+}
+
+.lang {
+  display: flex;
+  height: 8vh;
+  width: 25.8vw;
+  column-gap: 30px;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #111;
+}
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.lang-item img {
+  height: 5.3vh;
+}
+
+.formula {
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: -0.05em;
+  color: #111;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 120%;
+  letter-spacing: -0.05em;
+}
+
+p {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+}
+
+a {
+  display: flex;
+  border-radius: 99px;
+  padding: 15px 25px;
+  background: radial-gradient(
+    193.43% 282% at 50% 50%,
+    rgb(17, 17, 17) 0%,
+    rgb(65, 65, 65) 100%
+  );
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: #fff;
+  column-gap: 10px;
+  max-width: fit-content;
+  max-height: max-content;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.chat,
+input {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: #999;
+}
+
+.chat {
+  border-radius: 27px;
+  border: 0;
+  padding: 15px 25px;
+  width: 37.03vw;
+  height: 12.11vh;
+  box-sizing: border-box;
+}
+
+input {
+  border-radius: 99px;
+  border: 0;
+  padding: 15px 25px;
+  width: 37.03vw;
+  height: 5.29vh;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 0 1px 1px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  box-sizing: border-box;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  border-radius: 99px;
+  border: 0;
+  padding: 15px 25px;
+  background: radial-gradient(
+    193.43% 282% at 50% 50%,
+    rgb(17, 17, 17) 0%,
+    rgb(65, 65, 65) 100%
+  );
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: #fff;
+  column-gap: 10px;
+  max-width: fit-content;
+  max-height: max-content;
+}
+
+button:hover {
+  background: #333;
+}
+
+h4 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: #999;
+}
+
+@media screen and (max-width: 1028px) {
+  .container {
+    padding: 9.1vw 5vw 23.4vw 5vw;
+    position: relative;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    height: 20px;
+  }
+
+  .attention {
+    width: calc(100% + 10vw); /* Ширина изображения + padding слева и справа */
+    height: auto; /* Поддерживаем соотношение сторон */
+    left: -5vw; /* Компенсируем padding слева */
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .site {
+    width: 70vw;
+  }
+
+  .container {
+    width: 70vw;
+    padding: 9.1vw 5vw 23.4vw 5vw;
+  }
+
+  .list_one::after,
+  .list_two::after,
+  .list_three::after,
+  .list_four::after,
+  .list_five::after,
+  .list_two .additional-element {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .site {
+    width: 100vw;
+  }
+
+  .container {
+    width: 100vw;
+    padding: 9.1vw 5vw 23.4vw 5vw;
+    gap: 40px;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
